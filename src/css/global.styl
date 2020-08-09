@@ -1,0 +1,162 @@
+$maxheight = 100%
+*
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif
+html
+    height: $maxheight
+#app
+    @extend html
+body
+    @extend html
+.container-body
+    @extend html
+.common-margin-top
+    margin-top: 20px
+.header-inline, .header-inline div
+    display: inline-block
+.card-split-top
+    padding: 20px
+.card-avatar
+    display: flex
+    position: relative
+.card-avatar-avatar
+    margin-right: 1rem
+.card-avatar-title
+    color: #909399
+    margin-top: 0.3rem
+    font-size: 14px
+.card-avatar-content
+    font-size: 1.5em
+    margin-top: 0.5rem
+.card-avatar-content-lg
+    @extend .card-avatar-content
+    font-size: 2.3em
+.card-avatar-content-sm
+    font-size: 1em
+.card-avatar-avatar i
+    font-size: 2em
+    line-height: 60px
+.card-avatar-action
+    display: flex
+    align-items: center
+.el-aside
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    @media only screen and (max-width: 991px)
+        z-index: -1
+.el-dropdown-link
+    cursor: pointer
+    color: #409EFF
+.el-footer
+    text-align: center
+    position: absolute
+    bottom: 0
+    width: 100%
+    color: #606266
+    font-size: 14px
+    background-color: white
+.el-footer .el-button
+    font-size: 15px
+    padding: 0
+.el-footer > div
+    margin-top: 1rem
+.el-footer a
+    font-size: 16px
+.el-dialog
+    max-width: 700px
+.el-dialog.is-fullscreen
+    max-width: 100%
+.el-notification, .el-message
+    max-width: 90%
+.el-message
+    white-space: normal
+    @media (max-width: 400px)
+        min-width: 300px
+.el-scrollbar>.el-scrollbar__bar
+    opacity: 1 !important
+.nav-bar h2
+    margin: 0
+    display: inline-block
+    margin-left: 1rem
+.gutter-top
+    margin-top: 20px
+.container-main
+    margin-left: 200px
+    position: relative
+    padding-bottom: 46px
+    @media only screen and (max-width: 991px)
+        margin-left: 0
+.tag-function
+    cursor: pointer
+.geetest_holder.geetest_wind
+    width: 100% !important
+    min-width: unset !important
+#captcha-container
+    margin-bottom: 1rem
+#captcha-container iframe
+    max-width: 100%
+#captcha-container div#rc-anchor-container
+    max-width: 275px !important
+.order-table-expand label, .ann-table-expand label, .common-table-expand label, .staff-table-expand label
+    color: #99a9bf
+.order-table-expand .el-form-item, .ann-table-expand .el-form-item
+    margin-right: 0
+    margin-bottom: 0
+    width: 50%
+.common-table-expand .el-form-item, .staff-table-expand .el-form-item
+    margin-right: 0
+    margin-bottom: 0
+    width: 100%
+.staff-table-expand .el-form-item, .staff-table-expand label
+    font-size: 18px
+    @media (max-width: 500px)
+        font-size: 16px
+.staff-table-expand .el-form-item span
+    font-size: 16px
+    @media (max-width: 500px)
+        font-size: 14px
+.staff-table-expand .el-form-item button
+    font-size: 18px
+.text-alert
+    color: #ff7800
+.text-sub
+    color: #606266
+.avatar-icon-lg
+    font-size: 32px
+.card-avatar-avatar .avatar-icon-lg i
+    line-height: 106px
+.card-bottom-button
+    border-radius: 0 0 4px 4px
+    width: 100%
+    letter-spacing: 4px
+.table-buttons
+    margin-left: 10px
+.el-cascader-panel
+    max-height: 50vh
+.el-drawer.rtl
+    overflow-y: auto
+.text-danger
+    color: #F56C6C
+.el-progress-bar__inner:before
+    content: ''
+    opacity: 0
+    width: unset
+    z-index: 4
+    background-color: #fff
+    border-radius: 5px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    -webkit-animation: uim-progress-active 2s ease-in-out infinite
+    animation: uim-progress-active 2s ease-in-out infinite
+.mavon .v-note-wrapper
+    min-width: unset
+@keyframes uim-progress-active
+    from
+        opacity: 0.4
+        width: 0
+    to
+        opacity: 0
+        width: 100%
